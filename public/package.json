@@ -1,0 +1,17 @@
+{
+  "name": "my-billing-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node api/server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "cors": "latest",
+    "pg": "latest",
+    "dotenv": "latest",
+    "dayjs": "latest",
+    "pdfkit": "latest",
+    "uuid": "latest"
+  }
+}
