@@ -5,9 +5,7 @@ import dotenv from "dotenv";
 import PDFDocument from "pdfkit";
 import dayjs from "dayjs";
 import { v4 as uuidv4 } from "uuid";
-import serverless from "serverless-http";
 
-const handler = serverless(app);
 
 export const config = {
   api: {
@@ -24,10 +22,8 @@ const pool = new Pool({
 });
 
 const app = express();
-app.use(cors( { origin:["http://localhost:3000","https://ab-two-self.vercel.app/"]}
-));
 app.use(express.json());
-app.use(express.static("client"));
+app.use(express.static("public"));
 
 /* ============================================================
    1️⃣ NEW CUSTOMER + FIRST ORDER (FULLY FIXED)
